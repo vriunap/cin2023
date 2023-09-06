@@ -9872,7 +9872,7 @@ html.rd-navbar-fixed-linked .page {
 	position: relative;
 	overflow: hidden;
 	height: auto;
-	width: 100%;
+	width: 80%;
 	/* Fix of Webkit flickering */
 	z-index: 1;
 }
