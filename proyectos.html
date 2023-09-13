@@ -99,27 +99,87 @@
       </div>
     </header>
     <!-- Swiper-->
-    
 
     <!-- Inscripciones-->
-    <h1 class="titulo-centrado-sombreado">Inscripciones</h1>
+    <!-- <h1 class="titulo-centrado-sombreado">Inscripciones</h1>
+    <br> -->
+    <section class="form-register_f">
+      <h1 class="h3">Formulario de Inscripciones</h1><br>
 
-    <br>
+      <div class="form-grid_f">
+        <input class="controls_f" type="text" name="nombre_apellido" id="nombres_f"
+          placeholder="Ingrese sus Nombres y Apellidos" required>
+        <input class="controls_f" type="number" name="codigo_estudiante" id="codigo_f" placeholder="Ingrese su Código"
+          required>
+        <input class="controls_f" type="text" name="facultad" id="facultad_f" placeholder="Facultad/Escuela Profesional"
+          required>
+        <input class="controls_f" type="text" name="domicilio" id="domicilio_f" placeholder="Domicilio" required>
+        <input class="controls_f" type="number" name="telefono" id="telefono_f" placeholder="Teléfono" required>
+        <input class="controls_f" type="email" name="correo" id="correo_f" placeholder="Correo Electrónico" required>
+        <input class="controls_f" type="number" name="DNI" id="DNI" placeholder="DNI" required>
+        <input class="controls_f" type="text" name="nombre_ponencia" id="nombre_ponencia_f"
+        placeholder="Título de la Ponencia" required>
+      </div>
+      
+      <label class="centrado_f">¿Es Investigador RENACYT?</label>
+      <div class="radio-group_f">
+        <!-- No -->
+        <div>
+          <input type="radio" id="no_f" class="radio-button_f" name="renacyt" value="no">
+          <label for="no_f" class="radio-label_f"></label>
+          <label for="no_f">No</label>
+        </div>
+        <!-- Sí -->
+        <div>
+          <input type="radio" id="si_f" class="radio-button_f" name="renacyt" value="si">
+          <label for="si_f" class="radio-label_f"></label>
+          <label for="si_f">Sí</label>
+        </div>
+
+      </div>
+
+      
+
+      <div class="btn-group_f">
+        <div class="upload-btn-wrapper_f">
+          <button class="btn_f" onclick="uploadFile('resumen_pdf_f')">Subir PDF</button>
+          <input type="file" name="resumen_pdf" id="resumen_pdf_f" accept=".pdf" required>
+        </div>
+
+        <div class="upload-btn-wrapper_f">
+          <button class="btn_f" onclick="uploadFile('resumen_word_f')">Subir Word/Latex</button>
+          <input type="file" name="resumen_word" id="resumen_word_f" accept=".doc,.docx,.tex" required>
+        </div>
+
+      </div>
+      <br>
+
+      <style>
+        .upload-btn-wrapper_f {
+          display: flex;
+          justify-content: center;
+        }
+      </style>
+      <div class="upload-btn-wrapper_f">
+        <button class="btn_f" onclick="uploadFile('declaracion_jurada_f')">Declaracion jurada</button>
+        <input type="file" name="Declaracion Jurada" id="declaracion_jurada_f" required>
+      </div>
+
+      <input class="botons_f" type="submit" value="Enviar">
+    </section>
+
     <section class="section section-sm section-first bg-default centered-content">
-        <div class="container">
-          <div class="row row-30 align-items-center">
-            <!-- Añadido align-items-center para centrar verticalmente -->
+      <div class="container">
+        <div class="row row-30 align-items-center">
+          <!-- Añadido align-items-center para centrar verticalmente -->
 
-            <div class="col-md-12 text-lg-left wow fadeInUp">
-              <div class="event-details blue-text">
-              </div>
+          <div class="col-md-12 text-lg-left wow fadeInUp">
+            <div class="event-details blue-text">
             </div>
           </div>
         </div>
-      </section>
-    <!-- <a class="button button-default-outline button-wapasha" href="Bases_Bases.pdf" style="margin-bottom: 30px;">Descargar Bases</a> -->
-    <a class="button button-default-outline button-wapasha" href="#" target="_blank"
-      style="margin-bottom: 30px;">Enviar</a>
+      </div>
+    </section>
 
     <!-- Contacto-->
     <footer class="section section-fluid footer-classic">
