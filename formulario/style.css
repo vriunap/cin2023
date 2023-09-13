@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BOTONES*/
+.btn-group {
+  display: flex;
+  justify-content: center;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: rgb(255, 255, 255);
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* BOTONES */
+
+
+.form-register {
+  width: 1000px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h1 {
+  color: #8e9eac;  /* Un color azul oscuro/grisáceo. */
+  text-transform: uppercase;  /* Letras en mayúsculas para dar énfasis. */
+  letter-spacing: 3px;  /* Espaciado entre letras para mejorar la legibilidad. */
+  border-bottom: 3px solid #3498db;  /* Una línea inferior de color azul para añadir contraste. */
+  padding-bottom: 10px;  /* Espacio entre el texto y la línea inferior. */
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;  /* Usa una fuente legible, como Arial. */
+}
+
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f7fb;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.controls:focus {
+  border: 1px solid #007bff;
+}
+
+.botons {
+  display: block;
+  width: 100%;
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: rgb(26, 24, 24);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+.botons:hover {
+  background-color: #0056b3;
+}
+
+
+
+/*boton de si y no*/
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.radio-group label {
+  margin-right: 15px;
+}
+
+.radio-button {
+  display: none;
+}
+
+
+
+.radio-button:checked + .radio-label {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center;     /* Centra los elementos verticalmente */
+  gap: 40px;               /* Crea un espacio entre los elementos directos (divs que contienen los botones) */
+}
+
+
+
+.radio-label {
+  padding: 10px;
+  border: 2px solid #e1e1e1;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s;
+  margin-right: 5px;
+}
+
+
+.radio-button {
+  display: none;
+}
+
+.radio-label {
+  padding: 10px;
+  border: 2px solid #e1e1e1;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.centrado {
+      text-align: center;
+}
+
+.radio-button:checked + .radio-label::before {
+  content: "✔";
+  position: absolute;
+  font-size: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Esto crea 2 columnas de igual tamaño */
+  gap: 20px; /* Espacio entre los elementos de la grid */
+}
