@@ -34,13 +34,20 @@ function Home2() {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    fontSize: "1.5em",
-    margin: "20px 0",
+    fontSize: "2.5em",
+    margin: "40px 0",
+    background: "#f0f0f0",
+    borderRadius: "15px",
+    boxShadow: "0px 10px 15px rgba(0,0,0,0.1)"
   };
 
   const unitStyle = {
+    flex: 1,
+    padding: "20px 0",
     margin: "0 20px",
     textAlign: "center",
+    borderRight: "1px solid #d0d0d0",
+    color: "#333"
   };
 
   return (
@@ -60,7 +67,7 @@ function Home2() {
               <span className="primary-header">{time.minutes}</span>
               <div>Minutos</div>
             </div>
-            <div style={unitStyle}>
+            <div style={{...unitStyle, borderRight: "none"}}>
               <span className="primary-header">{time.seconds}</span>
               <div>Segundos</div>
             </div>
