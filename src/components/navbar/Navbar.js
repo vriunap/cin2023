@@ -70,7 +70,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                Home
+                Inicio
               </Nav.Link>
             </Nav.Item>
 
@@ -80,7 +80,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                About
+                Acerca del congreso
               </Nav.Link>
             </Nav.Item>
 
@@ -90,16 +90,16 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                Projects
+                Inscripciones
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link
-                href="https://blog.rahuljha.tech/"
-                target="_blank"
-                rel="noreferrer"
+                href="#"
+                // target="_blank"
+                // rel="noreferrer"
               >
-                Blogs
+                Bases
               </Nav.Link>
             </Nav.Item>
           </Nav>
