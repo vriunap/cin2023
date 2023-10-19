@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 function Home2() {
   const [time, setTime] = useState({
@@ -29,13 +30,44 @@ function Home2() {
     return () => clearInterval(interval);
   }, []);
 
+  const timerStyle = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "1.5em",
+    margin: "20px 0",
+  };
+
+  const unitStyle = {
+    margin: "0 20px",
+    textAlign: "center",
+  };
+
   return (
-    <div className="timer">
-      <div>{time.days} Días</div>
-      <div>{time.hours} Horas</div>
-      <div>{time.minutes} Minutos</div>
-      <div>{time.seconds} Segundos</div>
-    </div>
+    <Container fluid className="home-about-section" id="about">
+      <Container>
+        <Row>
+          <Col md={12} style={timerStyle}>
+            <div style={unitStyle}>
+              <span className="primary-header">{time.days}</span>
+              <div>Días</div>
+            </div>
+            <div style={unitStyle}>
+              <span className="primary-header">{time.hours}</span>
+              <div>Horas</div>
+            </div>
+            <div style={unitStyle}>
+              <span className="primary-header">{time.minutes}</span>
+              <div>Minutos</div>
+            </div>
+            <div style={unitStyle}>
+              <span className="primary-header">{time.seconds}</span>
+              <div>Segundos</div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </Container>
   );
 }
 
