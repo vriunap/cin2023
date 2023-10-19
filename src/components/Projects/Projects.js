@@ -90,7 +90,6 @@ function Projects() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
       <ScrollToTop />
     </section>
   );

@@ -94,7 +94,6 @@ function About() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
       <ScrollToTop />
     </section>
   );
