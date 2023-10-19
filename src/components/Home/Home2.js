@@ -52,6 +52,9 @@ function Home2() {
 
   return (
     <Container fluid className="home-about-section" id="about">
+      <h1 className="heading-name">
+                <strong className="main-name"> Faltan...</strong>
+              </h1>
       <Container>
         <Row>
           <Col md={12} style={timerStyle}>
