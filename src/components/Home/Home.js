@@ -41,6 +41,9 @@ function Home() {
             </Col>
           </Row>
         </Container>
+        <h2 className="project-heading">
+          Del <strong className="Fluorescent-Blue">11 </strong> al <strong className="Fluorescent-Blue">13 </strong> de <strong className="Fluorescent-Blue"> diciembre </strong>
+        </h2>
       </Container>
       <Home2 />
       <ScrollToTop />
